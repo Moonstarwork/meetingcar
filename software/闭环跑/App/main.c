@@ -26,8 +26,8 @@ void  main(void)
     }
 }
 
- void Task_50Hz()//定时器 20ms运行一次
- {
+void Task_50Hz()//定时器 20ms运行一次
+{
    
    /*
      camera_get_img();                                         //图像采集
