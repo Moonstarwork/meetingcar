@@ -63,7 +63,7 @@ void save_img(int x)
     
     
      
-     sprintf(img_file_name, "0:/320/%d_%d.txt",im_num,x);
+     sprintf(img_file_name, "0:/1221/%d_%d.txt",im_num,x);
      res = f_open(&fdst,img_file_name, FA_OPEN_ALWAYS | FA_WRITE | FA_READ);  //打开文件，如果没有就创建，带读写打开
 
     if( res == FR_DISK_ERR)

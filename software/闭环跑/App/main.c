@@ -11,7 +11,7 @@
 #include "allheader.h" 
 #include "receive.h"
 #include "control_car.h" 
-#include "init.h"
+#include "init.h"       
 #include "SD.h"
 void  main(void)
 {
@@ -29,7 +29,7 @@ void  main(void)
 void Task_50Hz()//定时器 20ms运行一次
 {
    
-   /*
+   
      camera_get_img();                                         //图像采集
      img_extract(img, imgbuff,CAMERA_SIZE);                    //图像解压
      echo_speed_process();                                    //编码器数据采集和滤波      
@@ -37,16 +37,22 @@ void Task_50Hz()//定时器 20ms运行一次
      translation();
      
      if(start_mode==1)
-      control_car();//进入遥控车模式
+     control_car();//进入遥控车模式
      else
      go_3_point();
-   */
    
+   
+  
+    
+  /*
      camera_get_img();                                         //图像采集
      img_extract(img, imgbuff,CAMERA_SIZE);                    //图像解压
      echo_speed_process();                                    //编码器数据采集和滤波      
     // turn_flag=img_process();                                 
-     translation();
+     translation();//蓝牙接收
     
      go_3_point();
+  
+  
+  */
 }

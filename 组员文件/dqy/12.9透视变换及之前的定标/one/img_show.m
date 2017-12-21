@@ -6,6 +6,6 @@
 %    imshow(b);
  %   imwrite(b,oname);
 %end
-     b = load('4.TXT');
+     b = load('3.TXT');
       imshow(b);
      
